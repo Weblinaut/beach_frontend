@@ -13,7 +13,7 @@ jobs:
           command: terraform apply -auto-approve -input=false terraform
   build:
     docker:
-      - image: djpate/circleci_build:latest
+      - image: weblinaut/circleci_build:latest
     steps:
       - checkout
       - run:
